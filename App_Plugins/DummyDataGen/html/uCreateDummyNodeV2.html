@@ -1,0 +1,89 @@
+﻿<div ng-controller="UCreateDummyNodeController as vm">
+    
+    <umb-pane>
+        <p>Create a dummy node under <strong>{{currentNode.name}}</strong> <img src="/App_Plugins/uNodeDummyContents/img/udummy-create-loader.gif" ng-if="vm.Loading" /></p>
+        <ul class="umb-actions umb-actions-child" ng-if="vm.docTypes.length > 0">
+
+            <li class="umb-action" ng-repeat="docType in vm.docTypes | orderBy:'name'">
+                <div class="umb-action-link dummy-form-wrapper" >
+                   
+                    
+                    <div style="display:block;width:100%">
+                        <i class="large icon {{docType.icon}}"></i>
+                        <span class="menu-label">
+                            {{docType.name}}
+                            <small>
+                                {{docType.description}}
+                            </small>
+
+                        </span>
+                        <br />
+                        <br />
+                        <div class="tool-tip-wrapp">
+                            <label style="display:block">Count:</label>
+                            <input type="number" ng-attr-id="{{'dummyContentCount_'+docType.alias}}" required style="display:block">
+                            <div class="help-tip">
+                                <p>
+                                    Number of duplicate nodes that need to be created
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tool-tip-wrapp">
+                            <label style="display:block">PreSequence:</label>
+                            <input type="text" ng-attr-id="{{'preSequenceTextBox_'+docType.alias}}" style="display:block">
+                            <div class="help-tip">
+                                <p>
+                                    Specify the PreSequence value
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tool-tip-wrapp">
+                            <label style="display:block">Sequence:</label>
+
+                            <select style="display:block" ng-attr-id="{{'sequenceDigits_'+docType.alias}}">
+                                <option value="0">0</option>
+                                <option value="00">00</option>
+                                <option value="000">000</option>
+                            </select>
+                            <div class="help-tip">
+                                <p>
+                                    Specify the Sequence Order
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tool-tip-wrapp">
+                            <label style="display:block">PostSequence:</label>
+                            <input type="text" ng-attr-id="{{'postSequenceTextBox_'+docType.alias}}" style="display:block">
+                            <div class="help-tip">
+                                <p>
+                                    Specify the PostSequence value
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tool-tip-wrapp">
+                            <label style="display:inline-block">Include Child Nodes:</label>
+                            <input type="checkbox" ng-attr-id="{{'includeChildCheckBox_'+docType.alias}}" style="display:inline-block" />
+                            <div class="help-tip">
+                                <p>
+                                    Create duplicate values for child nodes in the same order
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <input type="button" value="Create" ng-click="vm.createDummyNode(docType.alias)" style="display:block" />
+                    </div>
+                  
+
+                </div>
+            </li>
+
+        </ul>
+        <hr />
+        
+    </umb-pane>
+
+    
+</div>
