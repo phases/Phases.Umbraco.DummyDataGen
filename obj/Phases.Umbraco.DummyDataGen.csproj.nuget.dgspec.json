@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Packages\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen.csproj": {}
+  },
+  "projects": {
+    "D:\\Packages\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen.csproj": {
+      "version": "1.0.13.19",
+      "restore": {
+        "projectUniqueName": "D:\\Packages\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen.csproj",
+        "projectName": "Phases.Umbraco.DummyDataGen",
+        "projectPath": "D:\\Packages\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen.csproj",
+        "packagesPath": "C:\\Users\\Farshadudheen.K\\.nuget\\packages\\",
+        "outputPath": "D:\\Packages\\Phases.Umbraco.DummyDataGen\\Phases.Umbraco.DummyDataGen\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Farshadudheen.K\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Nuget Packages\\Demo": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Umbraco.Cms.Core": {
+              "target": "Package",
+              "version": "[13.4.1, )"
+            },
+            "Umbraco.Cms.Web.BackOffice": {
+              "target": "Package",
+              "version": "[13.4.1, )"
+            },
+            "Umbraco.Cms.Web.Common": {
+              "target": "Package",
+              "version": "[13.4.1, )"
+            },
+            "Umbraco.Cms.Web.Website": {
+              "target": "Package",
+              "version": "[13.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

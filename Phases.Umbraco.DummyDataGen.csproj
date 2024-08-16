@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ContentTargetFolders>.</ContentTargetFolders>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Phases.Umbraco.DummyDataGen</PackageId>
+    <Product>Phases.Umbraco.DummyDataGen</Product>
+    <Title>Phases.Umbraco.DummyDataGen</Title>
+    <Description>DummyGen is a robust and user-friendly NuGet package designed to simplify the creation of dummy content for testing in Umbraco CMS. Tailored for developers and quality analysts, DummyGen enhances testing workflows by enabling the generation of multiple nodes with a single click.
+
+Features:
+
+    Seamless Integration: Easily integrates with your existing Umbraco environment, ensuring quick setup and maximum compatibility.
+    Instant Content Generation: Generate a variety of dummy content instantly, whether for a few nodes or hundreds, with unmatched speed and accuracy.
+Enhanced Testing Efficiency: Automate content creation to focus on critical tasks, resulting in faster development cycles and more reliable software.
+User-Friendly Interface: An intuitive interface allows both novice and experienced users to generate dummy content without a steep learning curve.
+Support for Complex Structures: Handle complex content structures, including nested nodes and various content types, for versatile testing scenarios.
+</Description>
+    <PackageTags>umbraco-marketplace</PackageTags>
+    <Authors>farshadudheen, midhun roy</Authors>
+    <Company>phases</Company>
+    <Copyright>Copyright (c) Phases 2024</Copyright>
+    <PackageIcon>DummyGen icon.png</PackageIcon>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/phases/Phases.Umbraco.DummyDataGen</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.13.19</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="13.4.1" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="13.4.1" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="13.4.1" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="13.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\Phases.Umbraco.DummyDataGen\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Migrations\package.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\package.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DummyGen icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

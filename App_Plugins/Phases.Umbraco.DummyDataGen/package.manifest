@@ -1,0 +1,11 @@
+{
+  "id": "Phases.Umbraco.DummyDataGen",
+  "name": "Phases.Umbraco.DummyDataGen",
+  "javascript": [
+    "~/App_Plugins/Phases.Umbraco.DummyDataGen/js/uCreateDummyNodeController.js",
+    "~/App_Plugins/Phases.Umbraco.DummyDataGen/js/uCreateDummyNodeResources.js"
+  ],
+  "css": [
+    "~/App_Plugins/Phases.Umbraco.DummyDataGen/css/uDummyNodeStyle.css"
+  ]
+}

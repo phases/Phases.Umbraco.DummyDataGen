@@ -1,15 +1,10 @@
 ﻿using DummyDataGen.Notification;
-using DummyDataGen.Services.Interface;
 using DummyDataGen.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DummyDataGen.Services.Interface;
+using Microsoft.Extensions.DependencyInjection;
 using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.DependencyInjection;
 using Umbraco.Cms.Core.Notifications;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace DummyDataGen.Composers
 {

@@ -7,12 +7,12 @@ DummyDataGen is a robust and user-friendly NuGet package designed to simplify th
 To install DummyDataGen , run the following command in the NuGet Package Manager Console:
 
 ```bash
-Install-Package Phases.Umbraco.DummyDataGen
+Install-Packag DummyDataGen
 ```
 ### .NET CLI
 Alternatively, you can install DummyGen using the .NET CLI:
 ```bash
-dotnet add package Phases.Umbraco.DummyDataGen
+dotnet add package DummyDataGen
 ```
 ## Usage
 After installing the package, you can start using DummyDataGen in your Umbraco CMS project to generate dummy content for testing purposes.
@@ -20,8 +20,9 @@ After installing the package, you can start using DummyDataGen in your Umbraco C
 1. Open the Umbraco backoffice as the admin user.
 2. Navigate to the "Content" section.
 3. Right Click on the "Content" section in the toolbar.
-4. Configure the number of nodes and content properties.
-5. Click "Generate" to create the dummy content.
+4. click on the "Create Dummy Node"
+5. Configure the number of nodes and content properties.
+6. Click "Generate" to create the dummy content.
 
 ## Contributing
 

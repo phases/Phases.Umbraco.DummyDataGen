@@ -1,6 +1,6 @@
 ﻿using Umbraco.Cms.Core.Packaging;
 
-namespace DummyDataGen.Migrations
+namespace Phases.Umbraco.DummyDataGen.Migrations
 {
     public class CustomPackageMigrationPlan : PackageMigrationPlan
     {

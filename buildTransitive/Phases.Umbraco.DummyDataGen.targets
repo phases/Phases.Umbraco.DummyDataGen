@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PhasesUmbracoDummyDataGenContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Phases.Umbraco.DummyDataGen\**\*.*</PhasesUmbracoDummyDataGenContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopyPhasesUmbracoDummyDataGenAssets" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <PhasesUmbracoDummyDataGenContentFiles Include="$(PhasesUmbracoDummyDataGenContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying Phases.Umbraco.DummyDataGen files: $(PhasesUmbracoDummyDataGenContentFilesPath) - #@(PhasesUmbracoDummyDataGenContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(PhasesUmbracoDummyDataGenContentFiles)" DestinationFiles="@(PhasesUmbracoDummyDataGenContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Phases.Umbraco.DummyDataGen\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearPhasesUmbracoDummyDataGenAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <PhasesUmbracoDummyDataGenDir Include="$(MSBuildProjectDirectory)\App_Plugins\Phases.Umbraco.DummyDataGen\" />
+    </ItemGroup>
+    <Message Text="Clear old Phases.Umbraco.DummyDataGen data" Importance="high" />
+    <RemoveDir Directories="@(PhasesUmbracoDummyDataGenDir)" />
+  </Target>
+</Project>
