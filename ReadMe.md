@@ -24,6 +24,14 @@ After installing the package, you can start using DummyDataGen in your Umbraco C
 5. Configure the number of nodes and content properties.
 6. Click "Generate" to create the dummy content.
 
+## Screenshots
+
+Dummy Content Creation
+![App Screenshot](https://raw.githubusercontent.com/phases/Phases.Umbraco.DummyDataGen/18964a27de7018647308cf753db2b6fbf28c12d5/Screenshots/content.png)
+
+Create Dummy Node
+![App Screenshot](https://raw.githubusercontent.com/phases/Phases.Umbraco.DummyDataGen/main/Screenshots/create.png)
+
 ## Contributing
 
 We welcome contributions to enhance DummyDataGen! If you have any suggestions, bug reports, or feature requests, please create an issue or submit a pull request on GitHub.
