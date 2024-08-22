@@ -1,0 +1,41 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+    "AuthorDetails": {
+      "Name": "Phases, Farshadudheen, Midhun Roy",
+      "Description": "Phases - We create digital efficiency - Web, Podio, Integrations",
+      "Url": "https://www.phases.io/",
+      "ImageUrl": "",
+      "SyncContributorsFromRepository": true
+    },
+    "Category": "Developer Tools",
+    "Description": "DummyDataGen is a robust and user-friendly NuGet package designed to simplify the creation of dummy content for testing in Umbraco CMS. Tailored for developers and quality analysts, DummyDataGen enhances testing workflows by enabling the generation of multiple nodes with a single click.",
+    "DocumentationUrl": "https://github.com/phases/Phases.Umbraco.DummyDataGen/blob/main/ReadMe.md",
+    "LicenseTypes": [ "Free" ],
+    "IssueTrackerUrl": "https://github.com/phases/Phases.Umbraco.DummyDataGen/issues",
+    "PackageType": "Package",
+    "RelatedPackages": [
+      {
+        "PackageId": "",
+        "Description": ""
+      }
+    ],
+    "Screenshots": [
+      {
+        "ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.DummyDataGen/18964a27de7018647308cf753db2b6fbf28c12d5/Screenshots/content.png",
+        "Caption": "Dummy Content Creation",
+		"ImageUrl": "https://raw.githubusercontent.com/phases/Phases.Umbraco.DummyDataGen/main/Screenshots/create.png",
+        "Caption": "Create Dummy Node"      }
+    ],
+    "Tags": ["umbraco", "backoffice"],
+    "VersionSpecificPackageIds": [
+      {
+        "UmbracoMajorVersion": 10,
+        "PackageId": "Phases.Umbraco.DummyDataGen"
+      },
+      {
+        "UmbracoMajorVersion": 13,
+        "PackageId": "Phases.Umbraco.DummyDataGen"
+      }
+    ],
+    "VideoUrl": ""
+  }
