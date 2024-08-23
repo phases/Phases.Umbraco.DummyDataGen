@@ -5,7 +5,7 @@
       "Description": "Phases - We create digital efficiency - Web, Podio, Integrations",
       "Url": "https://www.phases.io/",
       "ImageUrl": "",
-      "SyncContributorsFromRepository": true
+      "SyncContributorsFromRepository": false
     },
     "Category": "Developer Tools",
     "Description": "DummyDataGen is a robust and user-friendly NuGet package designed to simplify the creation of dummy content for testing in Umbraco CMS. Tailored for developers and quality analysts, DummyDataGen enhances testing workflows by enabling the generation of multiple nodes with a single click.",
